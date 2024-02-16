@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indo Pla</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="page__body">
+    <header class="page__header">
+      <div class="container">
+        <h1>
+          <a class="header__link" href="#" target="_blank" rel="noopener noreferrer">
+            <img class="header__logo" src="./images/logo.svg" alt="Indo Pla">
+          </a>
+        </h1>
+        <h2 class="header__description">Connect with Nature</h2>
+        <div class="header__image media__container">
+          <img  class="image__group" src="./images/Group.png" alt="group image">
+        </div>
+      </div>
+    </header>
+    <main class="page__content">
+      <div class="container">
+        <section class="page__article">
+          <h2 class="page__title">Benefits of Indoor Plants:</h2>
+          <p class="page__paragraph"><span>Air Purification:</span> Many indoor plants have the ability to remove toxins and pollutants from the air, contributing to improved indoor air quality. They can help absorb harmful chemicals such as formaldehyde, benzene, and ammonia.</p>
+          <p class="page__paragraph"><span>Health Benefits:</span> Interacting with plants, such as watering, repotting, and pruning, can provide a sense of purpose and accomplishment. This can be particularly beneficial for individuals who enjoy gardening.</p>
+          <p class="page__paragraph"><span>Enhanced Productivity and Creativity:</span> Studies have indicated that having plants in workspaces or study areas can boost concentration, productivity, and creative thinking. The visual appeal of plants and the connection to nature can help reduce mental fatigue.</p>
+          <p class="page__paragraph"><span>Sleep Improvement:</span> Some indoor plants, like lavender and jasmine, emit soothing fragrances that can promote relaxation and better sleep</p>
+          <p class="page__paragraph"><span>Connection to Nature:</span> In urban environments or areas with limited access to green spaces, indoor plants offer a way to maintain a connection to nature and the outdoors.</p>
+          <p class="page__paragraph"><span>Stress Reduction:</span> Spending time around plants and natural greenery has been shown to reduce stress and anxiety. The presence of plants in indoor spaces can create a calming and soothing atmosphere, promoting relaxation.</p>
+          <div class="media__container media__container--video" id="media__container">
+            <video class="media__video" src="./video/video.mp4" poster="./images/video.jpg"></video>
+            <div class="media__controls">
+              <button class="media__button" title="Play">&#9654;</button>
+            </div>
+           <div class="media__controls--volume">
+            <img src="./images/muted.png" alt="muted" class="media__muted">
+            <input type="range" class="media__volume" min="0" max="1" step="0.01" value="0"/>
+           </div>
+            <svg class="media__svg">
+              <clipPath id="vid-clip-path" clipPathUnits="objectBoundingBox">
+                <path d="M0.085,1 C0.079,1,0.073,1,0.067,1 C0.047,0.995,0.035,0.973,0.031,0.937 C0.021,0.669,0.011,0.402,0.002,0.135 C0.002,0.099,0.012,0.076,0.031,0.064 C0.039,0.062,0.047,0.061,0.055,0.061 C0.356,0.041,0.657,0.021,0.958,0.001 C0.985,0.003,1,0.028,1,0.076 C0.992,0.354,0.982,0.633,0.973,0.912 C0.967,0.951,0.953,0.971,0.93,0.971 C0.648,0.981,0.367,0.99,0.085,1"/>
+              </clipPath>
+            </svg>
+          </div>
+          <div class="page__slider swiper__container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="slider__image" src="images/image-1.jpg" alt="plants">
+                <p class="page__paragraph">Best indoor plants</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__image" src="images/image-2.jpg" alt="plants">
+                <p class="page__paragraph">Indoor plants layout ideas</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__image" src="images/image-3.jpg" alt="plants">
+                <p class="page__paragraph">Low-Light and Easy Houseplants</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__image" src="images/image-4.jpg" alt="plants">
+                <p class="page__paragraph">Watering tips and plan</p>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="page__footer">
+      <div class="container">
+        <div class="footer__quick-response">
+          <h2 class="quick-response__title page__title">Why Us?</h2>
+          <div class="quick-response__description">
+            <div class="description__card card">
+              <img src="./images/OrganicFood.svg" alt="Organic Food" class="card__img">
+              <p class="card__paragraph page__paragraph">Different Plants and 100% organic</p>
+            </div>
+            <div class="description__card card">
+              <img src="./images/PottedPlant.svg" alt="PottedPlant" class="card__img">
+              <p class="card__paragraph page__paragraph">Pot style selection</p>
+            </div>
+            <div class="description__card card">
+              <img src="./images/NaturalFood.svg" alt="Natural Food" class="card__img">
+              <p class="card__paragraph page__paragraph">Fast Shipping</p>
+            </div>
+            <div class="description__card card">
+              <img src="./images/InTransit.svg" alt="In Transit" class="card__img">
+              <p class="card__paragraph page__paragraph">Our Plants are fresh.</p>
+            </div>
+          </div>
+          <a class="quick-response__btn" href="#" target="_blank" rel="noopener noreferrer">
+            Shop Now
+          </a>
+          <div class="quick-response__logo-container">
+            <a class="header__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="quick-response__logo header__logo" src="./images/logo.svg" alt="Indo Pla">
+            </a>
+            <p class="quick-response__copy page__paragraph">© 2024 IndoPla</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__groot-container">
+        <img class="footer__groot" src="./images/groot.png" alt="Grroot">
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
