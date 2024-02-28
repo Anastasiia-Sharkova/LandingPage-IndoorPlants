@@ -60,7 +60,7 @@ img {
 }
 
 .page__content {
-  background-image: url(../images/plants_bg/7.png);
+  background-image: url(../images/plants_bg/7.jpg);
   background-repeat: no-repeat;
   background-position: 95% 7%;
   background-size: 25%;
@@ -83,6 +83,13 @@ img {
 
 .header__logo {
   max-width: 588px;
+}
+
+.page__rain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .header__description {
