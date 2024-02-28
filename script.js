@@ -1,3 +1,12 @@
+document.addEventListener('mousemove', e => {
+	Object.assign(document.documentElement, {
+		style: `
+		--move-x: ${(e.clientX - window.innerWidth / 2) * -.005}deg;
+		--move-y: ${(e.clientY - window.innerHeight / 2) * .01}deg;
+		`
+	})
+})
+
 const videoPlayer = document.querySelector('#media__container');
 const video = videoPlayer.querySelector('.media__video');
 const playButton = videoPlayer.querySelector('.media__button');

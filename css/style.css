@@ -1,5 +1,7 @@
 :root {
   --green-color: #062502;
+  --index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 }
 
 @font-face {
@@ -51,8 +53,24 @@ img {
 
 .page__body {
   margin: 0 auto;
-  background: linear-gradient(265deg, rgba(0,0,0,1) 0%, rgba(25,124,23,1) 72%);
+  background-color: #000000;
   color: #ffffff;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.page__content {
+  background-image: url(../images/plants_bg/7.png);
+  background-repeat: no-repeat;
+  background-position: 95% 7%;
+  background-size: 25%;
+}
+
+.bg-img__container {
+  transform-style: preserve-3d;
+	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+	will-change: transform;
+	transition: transform var(--transition);
 }
 
 .header__link {
@@ -75,6 +93,89 @@ img {
   line-height: 36px;
   text-align: center;
   margin-top: 7.5%;
+}
+
+.header__bg-img {
+  position: absolute;
+  width: 10vw;
+}
+
+.bg-img-1 {
+  top: 271vh;
+  right: 2vh;
+  transform: translateZ(-55px) scale(1.06);
+}
+
+.bg-img-2 {
+  top: 201vh;
+  right: 0vh;
+  transform: rotate(17deg);
+}
+
+.bg-img-3 {
+  top: 223vh;
+  right: 17vh;
+  width: 11vw;
+  transform: translateZ(180px);
+}
+
+.bg-img-4 {
+  top: 275vh;
+  left: 6vh;
+  transform: translateZ(190px);
+}
+
+.bg-img-5 {
+  top: 206vh;
+  left: 15vh;
+  width: 9vw;
+  transform: translateZ(300px);
+}
+
+.bg-img-6 {
+  top: 238vh;
+  left: 15vh;
+  width: 8vw;
+  transform: translateZ(178px);
+}
+
+.bg-img-7 {
+  top: 310vh;
+  right: 20vh;
+  width: 13vw;
+  transform: translateZ(-55px) scale(1.06);
+}
+
+.bg-img-8 {
+  top: 323vh;
+  left: 17vh;
+  transform: rotate(17deg);
+}
+
+.bg-img-9 {
+  top: 305vh;
+  right: 2vh;
+  width: 9vw;
+  transform: translateZ(180px);
+}
+
+.bg-img-10 {
+  top: 175vh;
+  left: 6vh;
+  width: 8vw;
+}
+
+.bg-img-11 {
+  top: 336vh;
+  left: 15vh;
+  transform: translateZ(300px);
+}
+
+.bg-img-12 {
+  top: 315vh;
+  right: 15vh;
+  width: 9vw;
+  transform: translateZ(320px);
 }
 
 .image__group {
